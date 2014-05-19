@@ -1,24 +1,9 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2014-05-19 09:46:02
-categories: jekyll update
+title:  "Advanced Active Record"
+date:   2014-05-18 09:46:02
+categories: Active Record
 ---
 
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
-To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
+We were given an “Advanced” active record challenge to do in the AM, which went over many of the topics we discussed in the previous day’s lecture. Our instructor set it up so that we would have everything available in one file, including the database, so that we didn’t have to run db:drop,create,migrate,seed. This was really convenient and we didn’t have to waste any time setting up the environment every time. The challenge was to determine and model the relationships between Hotels, Rooms, Users, and Bookings. This is what the final migrations, models, and relationships look like using some of the more “advanced” techniques:
 
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
-
-[jekyll-gh]: https://github.com/jekyll/jekyll
-[jekyll]:    http://jekyllrb.com
