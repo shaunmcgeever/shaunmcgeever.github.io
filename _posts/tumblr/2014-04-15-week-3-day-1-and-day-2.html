@@ -1,0 +1,20 @@
+---
+layout: post
+title: 'Week 3: Day 1... and Day 2'
+date: '2014-04-15T22:28:00-04:00'
+tags: []
+tumblr_url: http://shaunmcgeeves.tumblr.com/post/82853999100/week-3-day-1-and-day-2
+---
+<p>I didn&#8217;t get to post yesterday so I&#8217;ll just lump the two into one.</p>
+<p>The learning goals for Week 3 are:</p>
+<ol><li>Design a relational database to represent collections of entities and the relationships between them</li>
+<li><span>Write SQL queries to extract desired information from a database</span></li>
+<li>Understand how to connect Ruby programs to a database using both hand-written SQL and an ORM like ActiveRecord</li>
+<li>Describe what an Object-Relational Mapper (ORM) is and how it works on a high level</li>
+</ol><p>Like last time, I&#8217;ll do my best to recap how I feel about each topic on Sunday.</p>
+<p>Day 1: My pair for the day was Lawrence.</p>
+<p>Today we worked on sqlite3 again. We designed more complex schemas. For example, a class schedule with sections, students, professors, etc. These schemas included many different variations of the one-to-one, one-to-many, and many-to-many relationships. We then worked on implementing these databases with ruby files. We wrote ruby code to call the methods and essentially control the data flow, but we implemented SQL statements to access the database. This was a bit tedious, but eventually it was starting to make some sense. We implemented a few functions, like basic CRUD (create, read, update, delete) features, as well as some join tables. Some of this stuff would have been nice to know last Friday for the project, but yeah. I guess that made it a little easier today. I also caught wind that the rails framework and active record actually handles most of this&#8230; But I&#8217;m really glad I&#8217;m learning how it actually works &#8220;behind the scenes&#8221;. I&#8217;d much rather know how it&#8217;s working, rather than depending on rails to just give me all the data I need unmistakably. If any errors occur, I hope to be able to sort, manage, and debug them myself. I really appreciate what DBC is doing here by introducing us to the core functionality of these languages. Just knowing the basic &#8220;sugar coat&#8221; wouldn&#8217;t cut it in the workforce. I feel like I&#8217;m really solidifying my knowledge and understanding.</p>
+
+<p>Day 2: My pair for the day was Justin.</p>
+<p>Today was very similar to yesterday. We dove into Active Record. However, it was really &#8220;active record jr&#8221;. What DBC had us do was manipulate three separate files, and combine them into one. Specifically, we had a Model file with a Model class. We had two other files with a Student class and a Cohort class, respectively. The Student and Cohort classes were full of functioning code, but the two were almost identical to each other. What we did today was combine all the code into the Model class. This was a bit troublesome at first. How would the Model know if e were talking about a Student or a Cohort? We utilized class methods using self and class instances to perform the actions we wanted. For example, the &#8220;self&#8221; instance would help us determine if we were dealing with a Student or a Cohort. At first it blew my mind, but after working with it and experimenting all day, it was all coming together. Again, I caught wind that the real Active Record does all this for us, but it was awesome to understand how it all works and what&#8217;s actually happening. The same theory from yesterday. I&#8217;m so grateful for having to struggle to understand it, rather than just taking the whole process for granted. I think I&#8217;ll feel more comfortable knowing I know how the processes actually work. Tomorrow we&#8217;ll be jumping into the real Active Record.</p>
+<p>Also, I&#8217;ve been messing with a few git tutorials. I&#8217;m hoping to get good at reseting branches, grabbing the useful commits, and all the other functions that are available. I hope to be better at this by Friday, which will be our next big team project.</p>
