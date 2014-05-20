@@ -7,6 +7,21 @@
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Week 8: Day 1</title>
+        <description>&lt;p&gt;&lt;br/&gt; Today we presented our applications from the past weekend. Ours can be seen here: &lt;a href=&quot;http://tranquil-brushlands-4939.herokuapp.com/&quot;&gt;http://tranquil-brushlands-4939.herokuapp.com/&lt;/a&gt; &lt;br/&gt;&lt;br/&gt; We had a code review of our project with both of our instructors. This was very helpful, seeing that this was our first actual rails application. We cleared up some issues regarding session helpers, overall testing and TDD, and where to define the methods regarding the API (to ensure that unnecessary/multiple calls weren’t made).&lt;br/&gt;&lt;br/&gt; Our assignments for the day included enhancing web performance of our rails applications. More specifically, this can be done by removing costly ActiveRecord calls and using more efficient ActiveRecord methods, or even writing SQL code. For this exercise, we had over ten thousand users and over one hundred and fifty thousand karma points (karma points belonged to user). When the current application was loaded, it took at least 10 seconds (10,000ms) to render the home page, which only included the top 50 users with the most karma points. The current application pulled all of the users from the database, sorted them by karma points, then pulled the top 50. It was our job to increase the speed of this search. The first thing we did was add an index to the karma_points table on the user_id. This will help us direct the karma points to the correct user so we can search through it quickly. The current method used to save the karma_points for each user is shown here&amp;#8230;&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;https://31.media.tumblr.com/0ff01a44ac9f5c341f5defb2457cb2fa/tumblr_inline_n5uwi9XMB51swddm8.png&quot;/&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;… and after some fighting with syntax and SQL, we were able to change that to….&lt;br/&gt;&lt;br/&gt;&lt;img alt=&quot;image&quot; src=&quot;https://31.media.tumblr.com/4cfe3809514ad2aa0083b56d1f2fec7d/tumblr_inline_n5uwgrS8h31swddm8.png&quot;/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt; …by including the following custom rake task that we can run before deploying….&lt;br/&gt;&lt;br/&gt;&lt;img alt=&quot;image&quot; src=&quot;https://31.media.tumblr.com/ed2a9c3eaa2388bd372c2117fd5c9557/tumblr_inline_n5uwfvjY0m1swddm8.png&quot;/&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;#8230;which totaled all of the users karma in the karma_points table and saved it as an attribute of the user. This reduced our pages initial load time to roughly 180ms, which is 98.2% faster than the original. ActiveRecord is very user friendly and powerful, but the time costs can be very expensive. Everything has a trade off.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 20 May 2014 00:58:00 -0400</pubDate>
+        <link>http://yourdomain.com/2014/05/20/week-8-day-1/</link>
+        <guid isPermaLink="true">http://yourdomain.com/2014/05/20/week-8-day-1/</guid>
+      </item>
+    
+      <item>
         <title>Week 6 Recap... and Week 7!</title>
         <description>&lt;p&gt;&lt;span&gt;So it’s the end of Week 7 and I have not been able to keep up with this blog. I can’t say it’s a bad thing though; it means I’ve been busy with the work DBC has given me.&lt;/span&gt;&lt;br/&gt;&lt;span&gt;&lt;/span&gt;&lt;br/&gt;&lt;span&gt;So the last time I checked in here it was the second day of Week 6. So I’ll give a quick recap of how Week 6 finished up. &lt;/span&gt;&lt;br/&gt;&lt;span&gt;&lt;/span&gt;&lt;br/&gt;&lt;span&gt;&lt;strong&gt;Day 3:  &lt;/strong&gt;We were given an “Advanced” active record challenge to do in the AM, which went over many of the topics we discussed in the previous day’s lecture. Our instructor set it up so that we would have everything available in one file, including the database, so that we didn’t have to run db:drop,create,migrate,seed. This was really convenient and we didn’t have to waste any time setting up the environment every time. The challenge was to determine and model the relationships between Hotels, Rooms, Users, and Bookings. This is what the final migrations, models, and relationships look like using some of the more “advanced” techniques:&lt;/span&gt;&lt;br/&gt;&lt;span&gt;&lt;/span&gt;&lt;br/&gt;&lt;span&gt;&lt;/span&gt;&lt;img src=&quot;https://31.media.tumblr.com/4da6512dbee44dcb415296ad882854e1/tumblr_inline_n5t0ok6T4F1swddm8.png&quot;/&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://31.media.tumblr.com/6fbadd5ba35ff82b54162e3aa06f7fea/tumblr_inline_n5t0r27OsC1swddm8.png&quot;/&gt;&lt;/p&gt;
@@ -179,25 +194,6 @@
         <pubDate>Tue, 22 Apr 2014 23:35:00 -0400</pubDate>
         <link>http://yourdomain.com/2014/04/22/week-4-day-2/</link>
         <guid isPermaLink="true">http://yourdomain.com/2014/04/22/week-4-day-2/</guid>
-      </item>
-    
-      <item>
-        <title>Phase 2: Week 4: Day 1</title>
-        <description>&lt;p&gt;So today marks the start of Phase 2. In Phase 2, we will be studying and introducing ourselves to many new technologies. We will be getting deeper into HTML, CSS, and Javascript, as well as bringing jQuery, HTTP, Ajax, Sinatra, OAuth, and Background Jobs into the mix. I can&amp;#8217;t say I have even heard of OAuth and Background Jobs, but I am excited to learn them all. &lt;/p&gt;
-&lt;p&gt;Phase 2 will look something like this:&lt;/p&gt;
-&lt;p&gt;Week 1: Web Fundamentals&lt;/p&gt;
-&lt;p&gt;Week 2: Front End&lt;/p&gt;
-&lt;p&gt;Week 3: Web Apps &lt;/p&gt;
-
-&lt;p&gt;I don&amp;#8217;t wasn&amp;#8217;t given an outline of learning goals for the week, but I&amp;#8217;ll still go over what we go through day by day.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Day 1:&lt;/strong&gt; Today I paired with Neal.&lt;/p&gt;
-&lt;p&gt;Today the new cohort of 22 students came in. They will begin Phase 1, just like I did three weeks ago. I&amp;#8217;m sure they&amp;#8217;ll have a good amount of questions for us that have completed Phase 1, so I look forward to that. It&amp;#8217;ll help keep me on my Ruby-toes while I work on my Front End skills. Today we began working on CSS and HTML styling sheets. We did basic layout challenges, reformatting blogs to have left hand, right hand, and top navigations. We had a lecture on the internet as a whole and basically how it works, specifically the relationship between the client and the server. We went over Get, Post, Put, and Delete. Very similar to SQL&amp;#8217;s CRUD methods. We also went over a standard Sinatra skeleton and how it is implemented.&lt;/p&gt;
-&lt;p&gt;In the afternoon we opened up Sinatra for ourselves. We did a few small, quick challenges to get ourselves used to the skeleton. We then jumped into a more difficult challenge. We made a small application/webpage that receives a user input and returns all possible anagrams of that word. We loaded a 250,000 dictionary into a database. We combined Ruby, ActiveRecord, HTML, and Sinatra to produce this program. It was close to mind blowing when I used an embedded Ruby file for the first time. It was very different to be able to use Ruby code in a HTML document. After we got the app running, we tweaked our existing Ruby code to make it more efficient. We adjusted our queries to the database and we were able to produce the answers a bit faster. &lt;/p&gt;
-&lt;p&gt;I really look forward to learning some front end skills. For the past 3 weeks (plus 12 weeks of Phase 0) we have only made apps that run out of the console. I can&amp;#8217;t wait to bring some life to these programs.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 22 Apr 2014 00:17:00 -0400</pubDate>
-        <link>http://yourdomain.com/2014/04/22/phase-2-week-4-day-1/</link>
-        <guid isPermaLink="true">http://yourdomain.com/2014/04/22/phase-2-week-4-day-1/</guid>
       </item>
     
   </channel>
