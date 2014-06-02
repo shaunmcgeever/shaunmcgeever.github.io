@@ -169,7 +169,7 @@ a:hover   { color: #000; text-decoration: underline; }
 
 .page-content {
   height: auto;
-  min-height: 450px;
+  min-height: 400px;
   padding: 85px 60px 120px 60px;
   background-color: #fff;
   position: relative;
