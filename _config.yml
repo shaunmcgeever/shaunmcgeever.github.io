@@ -1,9 +1,9 @@
 # Site settings
 title: Shaun McGeever
 email: ShaunMcGeever@gmail.com
-description: "Still working this out..."
+description: ""
 baseurl: ""
-url: "http://yourdomain.com"
+url: "http://shaunmcgeever.com"
 
 # Build settings
 markdown: kramdown

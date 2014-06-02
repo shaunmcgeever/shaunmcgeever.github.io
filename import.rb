@@ -6,3 +6,7 @@ require "jekyll-import"
       "add_highlights" => false,  
       "rewrite_urls"   => false   
     })
+
+
+## Run this file in terminal
+## ruby -rubygems import.rb
