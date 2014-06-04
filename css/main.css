@@ -9,7 +9,6 @@
 html, body { height: 100%; }
 
 body {
-  /*font-family: Helvetica, Arial, sans-serif;*/
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -35,6 +34,14 @@ a:hover   { color: #000; text-decoration: underline; }
   zoom: 1;
 }
 
+.page-wrap {
+  /*max-width: 800px;*/
+  min-height: 475px;
+  padding: 0 30px;
+  margin: 0 auto;
+  zoom: 1;  
+}
+
 
 /* Layout Styles */
 /* ----------------------------------------------------------*/
@@ -56,7 +63,7 @@ a:hover   { color: #000; text-decoration: underline; }
 .site-title:visited {
   display: block;
   color: white;
-  font-size: 26px;
+  font-size: 36px;
   letter-spacing: 0px;
   float: left;
   line-height: 56px;
@@ -80,7 +87,7 @@ a:hover   { color: #000; text-decoration: underline; }
   margin-right: 0px;
   text-align: left;
   top: 0px;
-  right: 195px;
+  right: 270px;
 }
 
 
@@ -169,7 +176,7 @@ a:hover   { color: #000; text-decoration: underline; }
 .page-content {
   height: auto;
   min-height: 400px;
-  padding: 85px 60px 120px 60px;
+  padding: 20px 60px 120px 60px;
   background-color: #fff;
   position: relative;
   top: 120px;
@@ -187,9 +194,24 @@ a:hover   { color: #000; text-decoration: underline; }
   padding: 20px 0px;
 }
 
+.home-content {
+  height: auto;
+  min-height: 400px;
+  padding: 85px 60px 120px 60px;
+  background-color: #fff;
+  position: relative;
+  top: 120px;
+  width: 100%;
+  z-index: 1;
+}
+
 .home h1 { 
   margin-bottom: 25px; 
   font-size: 30px;
+}
+
+.home-wrap{
+
 }
 
 .posts { list-style-type: none; }
