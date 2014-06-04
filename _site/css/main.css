@@ -253,7 +253,7 @@ a:hover   { color: #000; text-decoration: underline; }
   /*height: 16px;*/
 }
 
-.resume_pdf {
+.resume_pic {
   display: inline-block;
   width: 95%;
 }
@@ -438,6 +438,10 @@ a:hover   { color: #000; text-decoration: underline; }
 
 @media screen and (max-width: 750px) {
 
+  header.site-header {
+    height: 96px;
+  }
+
   .footer-col-1 { width: 50%; }
 
   .footer-col-2 {
@@ -466,13 +470,19 @@ a:hover   { color: #000; text-decoration: underline; }
 
 @media screen and (max-width: 675px) {
 
+  .site-title{
+    margin-top: 10px;
+  }
+
   .resume {
     position: absolute;
     left: 0px;
-    top: 75px;
+    top: 40px;
+    width: 85%;
   }
-  .resume_pdf {
+  .resume_pic {
     margin-left: 0px;
+    margin-top: 15px;
     padding-left: 0px;
     display: inline-block;
     width: 400px;
@@ -497,10 +507,18 @@ a:hover   { color: #000; text-decoration: underline; }
     display: block;
   }
 
+  #dropbox{
+    padding-left: 15px; 
+  }
+
+  header.site-header {
+    height: 96px;
+  }
+
   .wrap { padding: 0 12px; }
 
   .site-nav {
-    position: fixed;
+    position: absolute;
     z-index: 10;
     top: 14px; right: 8px;
     background-color: white;
@@ -508,6 +526,11 @@ a:hover   { color: #000; text-decoration: underline; }
     -moz-border-radius: 5px;
     border-radius: 5px;
     border: 1px solid #e8e8e8;
+  }
+
+  .page-content {
+    margin-top: 60px;
+    padding: 0px 0px 160px 20px;
   }
 
   .site-nav .menu-icon {
@@ -528,10 +551,13 @@ a:hover   { color: #000; text-decoration: underline; }
     display: none;
   }
 
-  .site-nav:hover .trigger { display: block; }
+  .site-nav:hover .trigger { 
+    display: block;
+  }
 
   .site-nav .page-link {
     display: block;
+    color: black;
     text-align: right;
     line-height: 1.25;
     padding: 5px 10px;
