@@ -253,6 +253,11 @@ a:hover   { color: #000; text-decoration: underline; }
   /*height: 16px;*/
 }
 
+.resume_pdf {
+  display: inline-block;
+  width: 95%;
+}
+
 .posts { list-style-type: none; }
 
 .posts li { margin-bottom: 30px; }
@@ -461,6 +466,20 @@ a:hover   { color: #000; text-decoration: underline; }
 
 @media screen and (max-width: 675px) {
 
+  .resume {
+    position: absolute;
+    left: 0px;
+    top: 75px;
+  }
+  .resume_pdf {
+    margin-left: 0px;
+    padding-left: 0px;
+    display: inline-block;
+    width: 400px;
+    float: left;
+  }
+
+
   .home {
     margin-top: 0px;
   }
@@ -471,6 +490,11 @@ a:hover   { color: #000; text-decoration: underline; }
     width: 250px;
     float: right;
     margin: 25px 125px 20px 0px;
+  }
+
+  #resume{
+    padding-left: 0px;
+    display: block;
   }
 
   .wrap { padding: 0 12px; }
