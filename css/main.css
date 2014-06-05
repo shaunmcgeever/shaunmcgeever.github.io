@@ -512,7 +512,7 @@ a:hover   { color: #000; text-decoration: underline; }
     display: inline-block;
     width: 250px;
     float: right;
-    margin: 25px 10px 20px 0px;
+    margin: 25px 10px 20px 30px;
   }
 
   #resume{
