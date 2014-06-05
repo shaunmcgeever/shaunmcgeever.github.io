@@ -29,7 +29,7 @@ a:hover   { color: #000; text-decoration: underline; }
 .wrap:after { clear: both; }
 .wrap {
   max-width: 800px;
-  padding: 0 30px;
+  padding: 0 10px;
   margin: 0 auto;
   zoom: 1;
 }
@@ -175,12 +175,11 @@ a:hover   { color: #000; text-decoration: underline; }
 
 #personal_picture {
   display: inline-block;
-  width: 45%;
+  width: 350px;
   float: right;
-  margin-right: 125px;
+  margin: 5px 100px 20px 0px;
   border-radius: 15px
 }
-
 
 .page-content {
   height: auto;
@@ -189,7 +188,7 @@ a:hover   { color: #000; text-decoration: underline; }
   background-color: #fff;
   position: relative;
   top: 120px;
-  width: 100%;
+  width: auto;
   z-index: 1;
 }
 
@@ -224,7 +223,7 @@ a:hover   { color: #000; text-decoration: underline; }
   background-color: #fff;
   position: relative;
   top: 120px;
-  width: 100%;
+  width: auto;
   z-index: 1;
 }
 
@@ -436,6 +435,16 @@ a:hover   { color: #000; text-decoration: underline; }
 /* ----------------------------------------------------------*/
 
 
+/*
+@media screen and (max-width: 900px) {
+
+  #personal_picture {
+    width: 50%;
+  }
+
+
+}*/
+
 @media screen and (max-width: 750px) {
 
   header.site-header {
@@ -463,12 +472,12 @@ a:hover   { color: #000; text-decoration: underline; }
     display: inline-block;
     width: 310px;
     float: right;
-    margin-right: 125px;
+    margin: 25px 10px 20px 0px;
   }
 
 }
 
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 625px) {
 
   .site-title{
     margin-top: 10px;
@@ -499,7 +508,7 @@ a:hover   { color: #000; text-decoration: underline; }
     display: inline-block;
     width: 250px;
     float: right;
-    margin: 25px 125px 20px 0px;
+    margin: 25px 10px 20px 0px;
   }
 
   #resume{
