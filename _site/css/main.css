@@ -507,6 +507,9 @@ a:hover   { color: #000; text-decoration: underline; }
     margin-top: 0px;
   }
 
+  .picture{
+    margin-left: 30px;
+  }
 
   #personal_picture {
     display: inline-block;
