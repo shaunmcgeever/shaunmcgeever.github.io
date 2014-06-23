@@ -125,7 +125,9 @@ $(document).ready(function() {
 
 	$('#new_game').on('click', function(e){
 		e.preventDefault();
-		start_new_game();
+		if (confirm("Are you sure you want to start a new game?")){
+			start_new_game();	
+		};
 	});
 
 });

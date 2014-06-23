@@ -1,4 +1,6 @@
 body{
+	/*background-color: gray; */
+	/*margin-top: 45px;*/
 	background-image: url("Cornhole-Tournament-3.png");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -68,7 +70,7 @@ body{
 	margin-right: 20px;
 }
 
-#blue_on_board, #blue_in_hole, #clear_blue{
+#blue_on_board, #blue_in_hole, #clear_blue {
 	background-color: blue;
 	display: inline-block;
 	font-size: 16px;
@@ -78,6 +80,10 @@ body{
 	padding: 10px;
 	box-shadow: 3px 3px 3px #888888;
 	margin: 7px 0px;
+}
+
+#blue_on_board, #blue_in_hole, #clear_blue:hover {
+ cursor: pointer; cursor: hand; 
 }
 
 #red_team {
@@ -103,6 +109,10 @@ body{
 	margin: 7px 0px;
 }
 
+#red_on_board, #red_in_hole, #clear_red:hover {
+ cursor: pointer; cursor: hand; 
+}
+
 #total{
 	background-color: green;
 	display: inline-block;
@@ -116,6 +126,10 @@ body{
 	box-shadow: 3px 3px 3px #888888;
 }
 
+#total:hover{
+	cursor: pointer; cursor: hand; 
+}
+
 #new_game {
 	background-color: black;
 	color: white;
@@ -124,6 +138,10 @@ body{
 	border-radius: 5px;
 	box-shadow: 3px 3px 3px #888888;
 	margin-top: 20px;
+}
+
+#new_game:hover{
+	cursor: pointer; cursor: hand; 
 }
 
 @media (max-width: 850px) {
