@@ -1,10 +1,11 @@
 var check_total_score = function(team, points){
 	if (points === 21) {
-		alert(team+"Team wins!!");
+		alert(team+" Team wins!!");
 		start_new_game();
 	} else if (points > 21) {
-		alert(team+"Team has gone over 21! They return to 13.")
-		$('#'+team+'_score').empty().append(13);
+		alert(team+" Team has gone over 21! They return to 13.");
+		var lowercase_team = team.toLowerCase();
+		$('#'+lowercase_team+'_score').empty().append(13);
 	};
 };
 
@@ -106,8 +107,8 @@ $(document).ready(function() {
 			var new_points = red_total - blue_total;
 			var current_points = parseInt($('#red_score').text());
 			var points = new_points + current_points;
-			$('#red_score').empty().append("Red", points);
-			check_total_score(points);
+			$('#red_score').empty().append(points);
+			check_total_score("Red",points);
 		} else {
 			alert("No points given!");
 		}
