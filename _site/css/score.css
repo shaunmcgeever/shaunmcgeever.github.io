@@ -31,17 +31,17 @@ html, body{
 #left_score {
 	font-size: 15em;
 	color: white;
-	position: relative;
-
+	position: absolute;
+	display: inline-block;
+	left: 18%;
 	top: 35%;
-	left: 35%;
 }
 
 #right_score {
 	font-size: 15em;
 	color: white;
-	position: relative;
-
+	position: absolute;
+	display: inline-block;
+	right: 18%;
 	top: 35%;
-	left: 35%;
 }
