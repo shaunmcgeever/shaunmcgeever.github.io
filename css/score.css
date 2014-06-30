@@ -45,3 +45,33 @@ html, body{
 	right: 18%;
 	top: 35%;
 }
+
+@media (max-width: 950px){
+
+	#left_score, #right_score{
+		font-size: 10em;
+	}
+}
+
+
+@media (max-width: 600px){
+
+	#left_score, #right_score{
+		font-size: 7em;
+	}
+}
+
+@media (max-width: 500px){
+
+	#left_score, #right_score{
+		font-size: 5.5em;
+	}
+}
+
+@media (max-width: 100px){
+
+	#left_score, #right_score{
+		font-size: 3.5em;
+	}
+}
+
