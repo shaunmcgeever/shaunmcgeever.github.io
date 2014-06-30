@@ -84,7 +84,7 @@ html, body{
 @media (max-width: 800px){
 
 	#left_score, #right_score{
-		font-size: 9em;
+		font-size: 8em;
 	}
 
 	#left_score {
