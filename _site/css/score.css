@@ -84,22 +84,22 @@ html, body{
 @media (max-width: 800px){
 
 	#left_score, #right_score{
-		font-size: 8em;
-	}
-
-	#left_score {
-		left:10%;
-	}
-
-	#right_score {
-		right:10%;
+		font-size: 9em;
 	}
 }
 
-@media (max-width: 500px){
+@media (max-width: 640px){
 
 	#left_score, #right_score{
 		font-size: 7em;
+	}
+
+	#left_score {
+		left:8.5%;
+	}
+
+	#right_score {
+		right:8.5%;
 	}
 }
 
