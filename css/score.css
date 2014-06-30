@@ -107,6 +107,12 @@ html, body{
 
 	#left_score, #right_score{
 		font-size: 3em;
-	}
+	}	
 }
 
+@media (max-height: 250px){
+
+	#left_score, #right_score{
+		font-size: 2.5em;
+	}	
+}
