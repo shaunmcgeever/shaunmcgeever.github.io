@@ -100,5 +100,13 @@ html, body{
 	#left_score, #right_score{
 		font-size: 3em;
 	}
+
+	#left_score {
+		left:10%;
+	}
+
+	#right_score {
+		right:10%;
+	}
 }
 
