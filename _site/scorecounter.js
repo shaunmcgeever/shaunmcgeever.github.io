@@ -1,13 +1,22 @@
 $(document).ready(function() {
 
-	$('#left').on('click',function(e){
+	$('#left').on('click',function(){
 		add_point('left');
 	});
-	$('#right').on('click',function(e){
+
+	$('#right').on('click',function(){
 		add_point('right');
 	});
 
-	$('#reset').on('click', function(e){
+	$('#right_subtract').on('click',function(){
+		subtract_point('right');
+	});
+
+	$('#left_subtract').on('click',function(){
+		subtract_point('left');
+	});
+
+	$('#reset').on('click', function(){
 		if (confirm("Are you sure you want to start a new game?")){
 			start_new_game();	
 		};
@@ -24,4 +33,11 @@ var add_point = function(side){
 		var score = parseInt($(side).text());
 		$(side).empty();
 		$(side).append(score+1);
+}
+
+var subtract_point = function(side){
+		var side = '#'+side+'_score'
+		var score = parseInt($(side).text());
+		$(side).empty();
+		$(side).append(score-1);
 }

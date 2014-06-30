@@ -10,61 +10,88 @@ html, body{
 	font-size: 20px;
 	width: 100%;
 	padding: 7.5px 0px;
+	z-index: 100;
 }
 
 #left {
 	height: 100%;
 	width: 50%;
 	background-color: blue;
+	position: fixed;
 	display: inline-block;
 	float: left;
+	z-index: 1;
 }
 
 #right {
 	height: 100%;
 	width: 50%;
 	background-color: red;
+	position: fixed;
+	left: 50%;
 	display: inline-block;
-	float: left;
+	float: right;
+	z-index: 1;
 }
 
 #left_score {
 	font-size: 15em;
 	color: white;
-	position: absolute;
+	position: fixed;
 	display: inline-block;
-	left: 14%;
-	top: 35%;
+	left: 15%;
+	top: 33%;
+}
+
+#left_subtract {
+	background-color: black;
+	color: white;
+	font-size: 25px;
+	position: fixed;
+	bottom: 0;
+	padding: 10px;
+	z-index: 100;
 }
 
 #right_score {
 	font-size: 15em;
 	color: white;
-	position: absolute;
+	position: fixed;
 	display: inline-block;
-	right: 14%;
-	top: 35%;
+	right: 15%;
+	top: 33%;
+}
+
+#right_subtract {
+	background-color: black;
+	color: white;
+	font-size: 25px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	padding: 10px;
+	z-index: 100;
 }
 
 @media (max-width: 950px){
 
 	#left_score, #right_score{
-		font-size: 10em;
+		font-size: 14em;
 	}
 }
 
 
-@media (max-width: 600px){
+@media (max-width: 800px){
 
 	#left_score, #right_score{
-		font-size: 7em;
+		font-size: 9em;
 	}
 }
 
 @media (max-width: 500px){
 
 	#left_score, #right_score{
-		font-size: 5.5em;
+		font-size: 7em;
 	}
 }
 
