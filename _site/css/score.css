@@ -73,5 +73,9 @@ html, body{
 	#left_score, #right_score{
 		font-size: 3.5em;
 	}
+
+	#left_score {
+		left: 40px;
+	}
 }
 
