@@ -149,3 +149,16 @@ body{
 		background-size: 675px;
 	}
 }
+
+@media (max-width: 640px) {
+
+	#rblue_name {
+		font-size: 30px;
+		color: blue;
+	}
+
+	#red_name {
+		font-size: 30px;
+		color: red;
+	}
+}
