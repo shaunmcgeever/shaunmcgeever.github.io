@@ -1,0 +1,47 @@
+html, body{
+	height: 100%;
+}
+#reset {
+	position: fixed;
+	display: inline-block;
+	text-align: center;
+	background-color: black;
+	color: white;
+	font-size: 20px;
+	width: 100%;
+	padding: 7.5px 0px;
+}
+
+#left {
+	height: 100%;
+	width: 50%;
+	background-color: blue;
+	display: inline-block;
+	float: left;
+}
+
+#right {
+	height: 100%;
+	width: 50%;
+	background-color: red;
+	display: inline-block;
+	float: left;
+}
+
+#left_score {
+	font-size: 15em;
+	color: white;
+	position: relative;
+
+	top: 35%;
+	left: 35%;
+}
+
+#right_score {
+	font-size: 15em;
+	color: white;
+	position: relative;
+
+	top: 35%;
+	left: 35%;
+}
