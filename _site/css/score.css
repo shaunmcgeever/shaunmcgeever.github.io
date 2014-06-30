@@ -60,6 +60,7 @@ html, body{
 	display: inline-block;
 	right: 15%;
 	top: 33%;
+	border-radius: 5px;
 }
 
 #right_subtract {
@@ -71,6 +72,7 @@ html, body{
 	right: 0;
 	padding: 10px;
 	z-index: 100;
+	border-radius: 5px;
 }
 
 @media (max-width: 950px){
